@@ -19,7 +19,7 @@
                     <br>
                 <h2 class='lead'>Which are the Top 10 active users?</h2>
                 <p>
-                    <img src="data:image/png;base64,{{ result }}" height="350" width=600>
+                    <img src="active_user.png" height="350" width=600>
                 </p>
             </div>
             <div class="col-md-10 col-lg-4 col-sm-10 mt-2">
@@ -53,7 +53,7 @@
                                 <h2 class='lead'>Which are the most and least attractive pages?</h2>
                                 <div class="mt-4">
                                 <p>
-                                    <img src="data:image/png;base64,{{ result2 }}" height="350" width=600>
+                                    <img src="pages_visited.png" height="350" width=600>
                                 </p>
                                 </div>
                             </div>
@@ -63,7 +63,7 @@
                                 <h2 class='lead'>What are the satisfaction level of users?</h2>
                                 <div class="mt-4">
                                 <p>
-                                    <img src="data:image/png;base64,{{ result3 }}" height="350" width=600>
+                                    <img src="satisfaction.png" height="350" width=600>
                                 </p>
                                 </div>
                             </div>
@@ -76,7 +76,7 @@
                         <h2 class='lead'>How users are divided into cluster groups?</h2>
                         <div class="mt-4">
                             <p>
-                                <img src="data:image/png;base64,{{ result4 }}" height="350" width=600>
+                                <img src="kmeans_cluster.png" height="350" width=600>
                             </p>
                         </div>
                     </div>
@@ -86,25 +86,7 @@
                         <h2 class='lead'>How many users in each cluster groups?</h2>
                         <div class="mt-4">
                             <p>
-                                <img src="data:image/png;base64,{{ result5 }}" height="350" width=600>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-10 col-lg-6 col-sm-10">
-                        <h2 class="lead">Which are the Top 10 most frequency navigation path rules?</h2>
-                        <div class="mt-4">
-                            {{ stats['rev_table'] | safe }}
-                        </div>
-                </div>
-                <div class="col-md-10 col-lg-6 col-sm-10">
-                    <div class="plot-area">
-                        <h2 class='lead'>What are the prediction of user behaviours based on Decision Tree?</h2>
-                        <div class="mt-4">
-                            <p>
-                                <img src="data:image/png;base64,{{ result6 }}" height="400" width=600>
+                                <img src="kmeans_count.png" height="350" width=600>
                             </p>
                         </div>
                     </div>
