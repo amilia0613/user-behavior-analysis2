@@ -5,19 +5,6 @@ import re
 import pandas as pd
 import numpy as np
 import os
-import matplotlib.pyplot as plt
-plt.switch_backend('agg')
-import seaborn as sns
-from sklearn.cluster import KMeans
-from sklearn.metrics import silhouette_score
-from sklearn.model_selection import train_test_split
-from sklearn import tree
-from sklearn.tree import DecisionTreeClassifier
-from mlxtend.preprocessing import TransactionEncoder
-from mlxtend.frequent_patterns import apriori
-from mlxtend.frequent_patterns import association_rules
-from io import BytesIO
-import base64
 
 app = Flask(__name__)
 
